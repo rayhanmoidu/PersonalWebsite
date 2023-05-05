@@ -1,0 +1,214 @@
+.mainframe {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sidebarContainerLeft {
+    height: 100vh;
+    width: 20vw;
+    background-image: url("../static/images/gardenleft.jpeg");
+    background-size: cover;
+}
+
+.sidebarContainerRight {
+    height: 100vh;
+    width: 20vw;
+    background-image: url("../static/images/gardenright.jpeg");
+    background-size: cover;
+}
+
+.sidebarContainerLeft.Inverted {
+    height: 100vh;
+    width: 20vw;
+    background-image: url("../static/images/gardenleft_invert.png");
+    background-size: cover;
+}
+
+.sidebarContainerRight.Inverted {
+    height: 100vh;
+    width: 20vw;
+    background-image: url("../static/images/gardenleft_invert.png");
+    background-size: cover;
+}
+
+.professionalContent {
+    height: 100vh;
+    width: 60vw;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.professionalContent::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebarContent {
+    display: flex;
+    flex-direction: column;
+    border: 3px;
+    border-style: solid;
+    border-color: black;
+    height: calc(100% - 6px)
+}
+
+.tabContainer {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.sidebarTab {
+    font-size: x-large;
+    color: blue;
+    border-style: solid;
+    border-width: 3px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.sidebarTab.selected {
+    color: red;
+}
+
+.headerContainer {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.mainTitle {
+    font-size: xx-large;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-width: 5px;
+    margin-bottom: 30px;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.projectElementContainer {
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.projectInfoContainer {
+    margin: 15px;
+}
+
+.projectTitle {
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.experienceElementHeader {
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.experienceImage {
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 60px;
+}
+
+.experienceElementContent {
+    margin: 15px;
+    margin-top: 0px;
+}
+
+.aboutContainter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.largeText {
+    font-size: medium;
+}
+
+.largeText.bold {
+    font-weight: 600;
+}
+
+.normalText {
+    font-size: medium;
+}
+
+.expElemTextPair {
+}
+
+.expElemTextPair.right {
+    text-align: right;
+}
+
+.experienceElementContainer {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.experienceSectionElementContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.experienceSectionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.experienceSectionTitle {
+    font-size: larger;
+    text-decoration: underline;
+}
+
+.aboutElementContainer {
+    font-size: large;
+    margin-bottom: 15px;
+    width: 75%;
+    align-self: center;
+    text-align: justify;
+}
+
+.projectDescriptionElement {
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectImage {
+    height: 300px;
+    object-fit: cover;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
