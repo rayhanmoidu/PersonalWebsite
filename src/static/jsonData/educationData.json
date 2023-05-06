@@ -1,22 +1,24 @@
 [
     {
         "institution": "University of Waterloo",
-        "degree": "Bachelor of Computer Science (BCS)",
+        "degree": "Bachelor of Computer Science",
         "location": "Waterloo, ON",
         "dates": "Expected April 2024",
         "imageUrl": "waterloo",
+        "href": "https://uwaterloo.ca/future-students/programs/computer-science",
         "description": [
-            "92% cumulative average, 5x Dean's Honours List",
-            "Relevant Courses: Introduction to Computer Graphics, Numerical Computation, Human-Computer Interaction, Operating Systems, Algorithms, Software Design and Architechtures, Computer Networks, User Interfaces, SOftware Testing and Quality Assurance, Introduction to Database Management, Data Structures and Data Managemenet, Software Engineering Principles, Introduction to Combinatorics",
-            "Awards: President's Scholarship of Distinction, President's Research Award"
+            "88% cumulative average (3.81 GPA)",
+            "Relevant Courses: Introduction to Computer Graphics, Numerical Computation, Operating Systems, Algorithms, Software Design and Architechtures, Computer Networks, User Interfaces, Software Testing and Quality Assurance, Introduction to Database Management, Software Engineering Principles, Introduction to Combinatorics, Linear Algebra for Engineering",
+            "Awards: 5x Dean's Honours List, President's Scholarship of Distinction, President's Research Award"
         ]
     },
     {
         "institution": "Nepean High School",
-        "degree": "Ontario Secondary School Diploma (OSSD)",
+        "degree": "Ontario Secondary School Diploma",
         "location": "Ottawa, ON",
         "dates": "Sept 2015 - Apr 2019",
         "imageUrl": "nepean",
+        "href": "https://nepeanhs.ocdsb.ca/",
         "description": [
             "Awards: Governor General's Academic Medal, Carman E. Pollock Memorial Mathematics Plaque"
         ]

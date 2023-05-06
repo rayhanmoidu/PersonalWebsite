@@ -10,16 +10,20 @@ import raaxis from "./raaxis.png"
 import nepean from "./nepean.png"
 import rayhan from "./rayhan.png"
 import lebron from "./lebron.jpg"
+import wlp4 from "./wlp4.png"
+import battleship from "./battleship.png"
+import github from "./github.png"
+import linkedin from "./linkedin.png"
+import email from "./email.svg"
+import changetheme from "./changetheme.png"
 
-
-export const projectImages : {[key:string] : any} = {
+export const localImages : {[key:string] : any} = {
     "meshGeneration": meshGeneration,
     "imageFilterDemo": imageFilter,
     "raaxis": raaxis,
-    "rayhan": rayhan
-}
-
-export const experienceImages : {[key:string] : any} = {
+    "rayhan": rayhan,
+    "wlp4": wlp4,
+    "battleship": battleship,
     "signiant": signiant,
     "canimmunize": canimmunize,
     "mentum": mentum,
@@ -27,5 +31,9 @@ export const experienceImages : {[key:string] : any} = {
     "formlabs": formlabs,
     "waterloo": waterloo,
     "nepean": nepean,
-    "lebron": lebron
+    "lebron": lebron,
+    "email": email,
+    "github": github,
+    "linkedin": linkedin,
+    "changetheme": changetheme
 }

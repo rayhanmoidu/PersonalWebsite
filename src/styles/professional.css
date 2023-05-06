@@ -36,6 +36,10 @@
     background-size: cover;
 }
 
+.contentContainer {
+    margin-bottom: 20px;
+}
+
 .professionalContent {
     height: 100vh;
     width: 60vw;
@@ -63,7 +67,7 @@
     max-width: 600px;
     width: 65%;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .sidebarTab {
@@ -108,6 +112,11 @@ a:-webkit-any-link {
     margin-bottom: 30px;
 }
 
+.projectElementContainer.anostyle {
+    text-decoration: inherit;
+    color: inherit;
+}
+
 .projectInfoContainer {
     margin: 15px;
     width: 100%;
@@ -128,7 +137,8 @@ a:-webkit-any-link {
 }
 
 .personalPhoto {
-    height: 200px;
+    height: 300px;
+    width: 300px;
     border-radius: 200px;
     margin-right: 30px;
 }
@@ -136,7 +146,6 @@ a:-webkit-any-link {
 .lebron {
     height: 67px;
     margin-left: 20px;
-    cursor: pointer;
 }
 .lebron.flipped {
     -webkit-transform: scaleX(-1);
@@ -159,6 +168,24 @@ a:-webkit-any-link {
     border-radius: 60px;
 }
 
+.iconContainer {
+    border-style: solid;
+    margin-bottom: 20px;
+    padding: 3px;
+    padding-bottom: 0px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-color: black;
+}
+.iconContainer.last {
+    margin-right: 0px;
+}
+
+.iconImg {
+    width: 16px;
+    height: 16px;
+}
+
 .photoAndSkills {
     display: flex;
     flex-direction: row;
@@ -167,15 +194,32 @@ a:-webkit-any-link {
     width: 60%
 }
 
+.nophones {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../static/images/nophones.png");
+}
+
+.skillsGroup {
+    align-self: center;
+}
+
 .experienceElementContent {
     margin: 15px;
     margin-top: 0px;
+}
+
+.skillsContainer {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
 }
 
 .aboutContainter {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .largeText {
@@ -213,6 +257,7 @@ a:-webkit-any-link {
 
 .expElemTextPair.right {
     text-align: right;
+    margin-top: 2.5px;
 }
 
 .experienceElementContainer {
@@ -252,12 +297,14 @@ a:-webkit-any-link {
     text-align: justify;
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
 }
 
 .projectDescriptionElement {
     margin-bottom: 10px;
     margin-left: 0px;
 }
+
 
 .flexRow {
     display: flex;

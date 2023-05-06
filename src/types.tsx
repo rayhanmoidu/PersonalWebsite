@@ -43,6 +43,7 @@ export interface EducationElementProps {
     dates: string;
     description: string[];
     imageUrl: string;
+    href: string;
 }
 
 export interface ResearchElementProps {
@@ -55,6 +56,7 @@ export interface ResearchElementData {
     description: string;
     location: string;
     numTerms: number;
+    href: string;
     imgUrl: string;
     termInfo: ExperienceTermData[];
 }
@@ -68,6 +70,7 @@ export interface ExperienceElementData {
     location: string;
     numTerms: number;
     imgUrl: string;
+    href: string;
     termInfo: ExperienceTermData[];
 }
 

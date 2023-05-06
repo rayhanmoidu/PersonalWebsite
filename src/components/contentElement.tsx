@@ -32,10 +32,12 @@ function getTSXElementsToRender(jsonKey: ProfessionalContentElement): JSX.Elemen
                 [<div className="aboutContainter">
                     <div className="photoAndSkills">
                         <img className="personalPhoto" src={rayhan}></img>
-                        <div>
-                            {languagesSection}
-                            {technologiesSection}
-                            {toolsSection}
+                        <div className="skillsContainer">
+                            <div className="skillsGroup">
+                                {languagesSection}
+                                {technologiesSection}
+                                {toolsSection}
+                            </div>
                         </div>
                     </div>
                     <div className="aboutElementContainer">
@@ -48,7 +50,7 @@ function getTSXElementsToRender(jsonKey: ProfessionalContentElement): JSX.Elemen
         case ProfessionalContentElement.Education:
             return [<div className="projectsContainer">
                 {educationJson.map((educationDataElem) => {
-                    return <EducationElement imageUrl={educationDataElem.imageUrl} institution={educationDataElem.institution} degree={educationDataElem.degree} location={educationDataElem.location} dates={educationDataElem.dates} description={educationDataElem.description}/>
+                    return <EducationElement href={educationDataElem.href} imageUrl={educationDataElem.imageUrl} institution={educationDataElem.institution} degree={educationDataElem.degree} location={educationDataElem.location} dates={educationDataElem.dates} description={educationDataElem.description}/>
                 })}
             </div>]
         case ProfessionalContentElement.Work:

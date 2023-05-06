@@ -5,6 +5,7 @@
             "location": "Montreal, QC",
             "numTerms": 1,
             "imgUrl": "behaviour",
+            "href": "https://www.bhvr.com/",
             "termInfo": [
                 {
                     "position": "Game Programmer Intern",
@@ -22,6 +23,7 @@
             "location": "Somerville, MA",
             "numTerms": 1,
             "imgUrl": "formlabs",
+            "href": "https://formlabs.com/",
             "termInfo": [
                 {
                     "position": "UI Software Engineering Intern",
@@ -39,6 +41,7 @@
             "location": "Ottawa, ON",
             "numTerms": 1,
             "imgUrl": "signiant",
+            "href": "https://www.signiant.com/",
             "termInfo": [
                 {
                     "position": "Software Developer Intern",
@@ -56,6 +59,7 @@
             "location": "Toronto, ON",
             "numTerms": 1,
             "imgUrl": "mentum",
+            "href": "https://mentumqr.com/",
             "termInfo": [
                 {
                     "position": "Software Engineering Intern",
@@ -72,6 +76,7 @@
             "location": "Ottawa, ON",
             "numTerms": 1,
             "imgUrl": "canimmunize",
+            "href": "https://www.canimmunize.ca/en/home",
             "termInfo": [
                 {
                     "position": "Software Developer Intern",

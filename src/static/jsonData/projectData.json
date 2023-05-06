@@ -2,7 +2,7 @@
     {
         "title": "2D Triangle Mesh Generation Library",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus vitae nisi nec interdum. Nunc eget mi facilisis, ullamcorper nunc malesuada, vehicula eros. Mauris rutrum pretium purus vel volutpat. Fusce nec odio dictum, semper ex fermentum, ullamcorper sapien. Aenean eget augue pulvinar, aliquet dolor ac, feugiat metus."
+            "Created a lightweight library that generates 2D triangle meshes for user defined isosurfaces in C++. Includes various options for triangle tiling arrangements, including an all-acute adaptation. Provides option for manual specification of desired triangle side lengths in custom regions of isosurface."
         ],
         "projectUrl": "https://github.com/rayhanmoidu/MeshGeneration",
         "imageUrl": "meshGeneration",
@@ -11,7 +11,7 @@
     {
         "title": "Image Morpher",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus vitae nisi nec interdum. Nunc eget mi facilisis, ullamcorper nunc malesuada, vehicula eros."
+            ""
         ],
         "projectUrl": "",
         "imageUrl": "",
@@ -29,10 +29,9 @@
     {
         "title": "Image Filters",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Vivamus tempus vitae nisi nec interdum. Nunc eget mi facilisis, ullamcorper nunc malesuada, vehicula eros."
+            "Used OpenCV to create various photo filters in C++. Employed quadtree to organize image attributes spatially, and applied geometric tiling techniques to produce desired aesthetic results."
         ],
-        "projectUrl": "",
+        "projectUrl": "https://github.com/rayhanmoidu/imageProcessing",
         "imageUrl": "imageFilterDemo",
         "public": true
     },
@@ -48,30 +47,27 @@
     {
         "title": "WLP4 Compiler",
         "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempus vitae nisi nec interdum. Nunc eget mi facilisis, ullamcorper nunc malesuada, vehicula eros. Vivamus tempus vitae nisi nec interdum. Nunc eget mi facilisis, ullamcorper nunc malesuada, vehicula eros.",
-            "Vivamus tempus vitae nisi nec interdum. Nunc eget mi facilisis, ullamcorper nunc malesuada, vehicula eros.",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "Vivamus tempus vitae nisi nec interdum. Nunc eget mi facilisis, ullamcorper nunc malesuada, vehicula eros."
+            "Created a compiler including lexical analysis, syntactical analysis, semantic analysis, and code generation for the programming language WLP4, a strict subset of C++."
         ],
         "projectUrl": "",
-        "imageUrl": "",
+        "imageUrl": "wlp4",
         "public": true
     },
     {
         "title": "Battleship",
         "description": [
-            "Vivamus tempus vitae nisi nec interdum. Nunc eget mi facilisis, ullamcorper nunc malesuada, vehicula eros."
+            "Implemented the classic game of Battleship as a JavaFX application in Kotlin, employing MVC architechture to support gameplay."
         ],
         "projectUrl": "",
-        "imageUrl": "",
+        "imageUrl": "battleship",
         "public": true
     },
     {
         "title": "RAAXIS",
         "description": [
-            "Vivamus tempus vitae nisi nec interdum. Nunc eget mi facilisis, ullamcorper nunc malesuada, vehicula eros."
+            "Designed and built a 2-player adaptation of Tetris. Programmed game and embedded logic in C++, optimizing memory usage to remain within the constraints of the Arduino Uno. Coordinated hardware to facilitate tactile gameplay."
         ],
-        "projectUrl": "",
+        "projectUrl": "https://github.com/rayhanmoidu/RAXXIS",
         "imageUrl": "raaxis",
         "public": true
     }

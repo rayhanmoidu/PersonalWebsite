@@ -3,11 +3,25 @@ import '../styles/professional.css';
 import { Link } from "react-router-dom";
 import {ContentElement, Sidebar, Header} from '../components/index'
 import { ProfessionalLandingPageProps, ProfessionalContentElement } from '../types';
-
+import nophones from "../static/images/nophones.png";
 
 function Professional(props: ProfessionalLandingPageProps) {
 
   const [isThemeStateInverted, setIsThemeStateInverted] = useState(false);
+
+  const [width, setWidth] = useState<number>(window.innerWidth);
+
+  function handleWindowSizeChange() {
+      setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+      window.addEventListener('resize', handleWindowSizeChange);
+      return () => {
+          window.removeEventListener('resize', handleWindowSizeChange);
+      }
+  }, []);
+
+  const isMobile = width <= 768;
 
   // useEffect(() => {
   //   console.log("this should not be starting again and again") 
@@ -15,16 +29,20 @@ function Professional(props: ProfessionalLandingPageProps) {
   //     setIsThemeStateInverted(value => !value)
   //   })
   // }, []);
-  return (
-    <div className="mainframe">
-      <Sidebar pos="left" shouldInvertTheme={isThemeStateInverted}/>
-      <div className="professionalContent">
-        <Header selectedTab={props.tabToRender} changeThemeCallback={()=>{setIsThemeStateInverted(!isThemeStateInverted)}}/>
-        <ContentElement jsonKey={props.tabToRender}/>
+  if (isMobile) {
+    return (<div className="nophones"></div>)
+  } else {
+    return (
+      <div className="mainframe">
+        <Sidebar pos="left" shouldInvertTheme={isThemeStateInverted}/>
+        <div className="professionalContent">
+          <Header selectedTab={props.tabToRender} changeThemeCallback={()=>{setIsThemeStateInverted(!isThemeStateInverted)}}/>
+          <ContentElement jsonKey={props.tabToRender}/>
+        </div>
+        <Sidebar pos="right" shouldInvertTheme={isThemeStateInverted}/>
       </div>
-      <Sidebar pos="right" shouldInvertTheme={isThemeStateInverted}/>
-    </div>
-  );
+    );
+  }
 }
 
 function startFlickerTimeout(changeThemeCallback: any) {

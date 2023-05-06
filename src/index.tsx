@@ -6,6 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
   Route,
+  redirect
 } from "react-router-dom";
 import { create } from 'domain';
 import Professional from './pages/Professional';
@@ -14,30 +15,26 @@ import { ProfessionalContentElement } from './types';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>
-  },
-  {
-    path: "professional/about",
     element: <Professional tabToRender={ProfessionalContentElement.About}/>
   },
   {
-    path: "professional/projects",
+    path: "/about",
+    element: <Professional tabToRender={ProfessionalContentElement.About}/>
+  },
+  {
+    path: "/projects",
     element: <Professional tabToRender={ProfessionalContentElement.Projects}/>
   },
   {
-    path: "professional/work",
+    path: "/work",
     element: <Professional tabToRender={ProfessionalContentElement.Work}/>
   },
   {
-    path: "professional/education",
+    path: "/education",
     element: <Professional tabToRender={ProfessionalContentElement.Education}/>
   },
-  // {
-  //   path: "professional/skills",
-  //   element: <Professional tabToRender={ProfessionalContentElement.Skills}/>
-  // },
   {
-    path: "professional/research",
+    path: "/research",
     element: <Professional tabToRender={ProfessionalContentElement.Research}/>
   },
 ])

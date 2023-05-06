@@ -5,13 +5,14 @@ import '../styles/professional.css';
 import { ProfessionalSidebarProps, ProjectElementProps } from '../types';
 import img from '../static/images/meshGeneration.png'
 import { pathToFileURL } from 'url';
-import {projectImages} from '../static/images/images'
+import {localImages} from '../static/images/images'
 
 function ProjectElement(props: ProjectElementProps) {
     console.log(props.imageUrl)
-    return (
-        <div className="projectElementContainer">
-            <img className="projectImage" src={projectImages[props.imageUrl]}/>
+
+    const returnElement = (
+        <>
+            <img className="projectImage" src={localImages[props.imageUrl]}/>
             <div className="projectInfoContainer">
                 <div className="projectTitle">{props.title}</div>
                 <div>
@@ -26,8 +27,21 @@ function ProjectElement(props: ProjectElementProps) {
                     }
                 </div>
             </div>
-        </div>
-    );
+        </>
+    )
+    if (props.projectUrl != "") {
+        return (
+            <a href={props.projectUrl} className="projectElementContainer anostyle">
+                {returnElement}
+            </a>
+        )
+    } else {
+        return (
+            <div className="projectElementContainer">
+                {returnElement}
+            </div>
+        )
+    }
 }
 
 export default ProjectElement;

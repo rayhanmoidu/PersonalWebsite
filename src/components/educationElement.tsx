@@ -3,14 +3,23 @@ import ReactDOM from 'react-dom/client';
 import { Link } from 'react-router-dom';
 import '../styles/professional.css';
 import { ProfessionalSidebarProps, EducationElementProps } from '../types';
-import {experienceImages} from '../static/images/images'
+import {localImages} from '../static/images/images'
 
 function EducationElement(props: EducationElementProps) {
-    return (
-        <div className="projectElementContainer">
-            <img className="projectImage" src={experienceImages[props.imageUrl]}/>
+    const educationContent = <> 
+        <img className="projectImage" src={localImages[props.imageUrl]}/>
             <div className="projectInfoContainer">
-                <div className="projectTitle">{props.institution}</div>
+                {/* <div className="projectTitle">{props.institution}</div> */}
+                <div className="experienceElementHeader">
+                    <div className="expElemTextPair">
+                        <div className="largeText bold">{props.institution}</div>
+                        <div className="normalText">{props.degree}</div>
+                    </div>
+                    <div className="expElemTextPair right">
+                        <div className="largeText">{props.location}</div>
+                        <div className="normalText">{props.dates}</div>
+                    </div>
+                </div>
                 <div>
                     {
                         props.description.map((descriptionElement) => {
@@ -23,9 +32,18 @@ function EducationElement(props: EducationElementProps) {
                     }
                 </div>
             </div>
+    </>
+    if (props.href !="") {
+        return (
+            <a href={props.href} className="projectElementContainer anostyle">
+                {educationContent}
+            </a>
+        )
+    } else {
+        return <div className="projectElementContainer">
+            {educationContent}
         </div>
-
-    );
+    }
 }
 
 export default EducationElement;
