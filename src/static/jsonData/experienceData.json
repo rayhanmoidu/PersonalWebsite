@@ -1,29 +1,4 @@
 {
-    "research": [
-        {
-            "organization": "University of Waterloo - Computational Motion Group",
-            "location": "Waterloo, ON",
-            "numTerms": 2,
-            "imgUrl": "waterloo",
-            "termInfo": [
-                {
-                    "position": "Undergraduate Research Assistant",
-                    "dates": "Sept 2022 - Dec 2022",
-                    "description": [
-                        ""
-                    ]
-                },
-                {
-                    "position": "Undergraduate Research Assistant",
-                    "dates": "May 2023 - Aug 2023",
-                    "description": [
-                        ""
-                    ]
-                }
-            ]
-
-        }
-    ],
     "work": [
         {
             "organization": "Behaviour Interactive",

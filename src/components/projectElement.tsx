@@ -8,7 +8,7 @@ import { pathToFileURL } from 'url';
 import {projectImages} from '../static/images/images'
 
 function ProjectElement(props: ProjectElementProps) {
-    const srcPath = "../static/images/meshGeneration.png";
+    console.log(props.imageUrl)
     return (
         <div className="projectElementContainer">
             <img className="projectImage" src={projectImages[props.imageUrl]}/>

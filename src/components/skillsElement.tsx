@@ -6,7 +6,9 @@ import { ProfessionalSidebarProps, SkillsElementProps } from '../types';
 
 function SkillsElement(props: SkillsElementProps) {
     return (
-        <div></div>
+        <div className="skillSection">
+            <div><strong>{props.skillSection}</strong>: {props.skillList}</div>
+        </div>
     );
 }
 

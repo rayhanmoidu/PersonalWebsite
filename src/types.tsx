@@ -15,10 +15,9 @@ export interface HeaderProps {
 export enum ProfessionalContentElement {
     About = 1,
     Projects,
-    Experience,
+    Work,
+    Research,
     Education,
-    Skills,
-    Research
 }
 
 export interface ProjectElementProps {
@@ -34,6 +33,7 @@ export interface AboutElementProps {
 
 export interface SkillsElementProps {
     skillList: string;
+    skillSection: string;
 }
 
 export interface EducationElementProps {
@@ -42,11 +42,25 @@ export interface EducationElementProps {
     location: string;
     dates: string;
     description: string[];
+    imageUrl: string;
+}
+
+export interface ResearchElementProps {
+    experienceList: ResearchElementData[];
+}
+
+export interface ResearchElementData {
+    institution: string;
+    group: string;
+    description: string;
+    location: string;
+    numTerms: number;
+    imgUrl: string;
+    termInfo: ExperienceTermData[];
 }
 
 export interface ExperienceElementProps {
     experienceList: ExperienceElementData[];
-    title: string;
 }
 
 export interface ExperienceElementData {

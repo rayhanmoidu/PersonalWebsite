@@ -8,7 +8,9 @@ import aboutJson from '../static/jsonData/aboutData.json';
 import educationJson from '../static/jsonData/educationData.json';
 import experienceJson from '../static/jsonData/experienceData.json';
 import skillsJson from '../static/jsonData/skillsData.json';
-import {ProjectElement, AboutElement, ExperienceElement, EducationElement, SkillsElement} from './index';
+import researchJson from '../static/jsonData/researchData.json';
+import {ProjectElement, AboutElement, ExperienceElement, EducationElement, SkillsElement, ResearchElement} from './index';
+import rayhan from "../static/images/rayhan.png";
 
 function ContentElement(props: ContentElementProps) {
     const elementsToRender = getTSXElementsToRender(props.jsonKey);
@@ -23,24 +25,40 @@ function getTSXElementsToRender(jsonKey: ProfessionalContentElement): JSX.Elemen
     console.log(projectJson)
     switch (jsonKey) {
         case ProfessionalContentElement.About:
-            return [<div className="aboutContainter">
-                {aboutJson.description.map((descriptionElement) => {
-                    return <AboutElement descriptionElement={descriptionElement} />
+            const languagesSection = <SkillsElement skillSection='Languages' skillList={skillsJson.languages}/>
+            const technologiesSection = <SkillsElement skillSection='Technologies' skillList={skillsJson.technologies}/>
+            const toolsSection = <SkillsElement skillSection='Dev Tools' skillList={skillsJson.devTools}/>
+            return (
+                [<div className="aboutContainter">
+                    <div className="photoAndSkills">
+                        <img className="personalPhoto" src={rayhan}></img>
+                        <div>
+                            {languagesSection}
+                            {technologiesSection}
+                            {toolsSection}
+                        </div>
+                    </div>
+                    <div className="aboutElementContainer">
+                        {aboutJson.description.map((descriptionElement) => {
+                            return <AboutElement descriptionElement={descriptionElement} />
+                        })}
+                    </div>
+                </div>]
+            );
+        case ProfessionalContentElement.Education:
+            return [<div className="projectsContainer">
+                {educationJson.map((educationDataElem) => {
+                    return <EducationElement imageUrl={educationDataElem.imageUrl} institution={educationDataElem.institution} degree={educationDataElem.degree} location={educationDataElem.location} dates={educationDataElem.dates} description={educationDataElem.description}/>
                 })}
             </div>]
-        case ProfessionalContentElement.Education:
-            return educationJson.map((educationDataElem) => {
-                return <EducationElement institution={educationDataElem.institution} degree={educationDataElem.degree} location={educationDataElem.location} dates={educationDataElem.dates} description={educationDataElem.description}/>
-            })
-        case ProfessionalContentElement.Experience:
-            const researchElement = <ExperienceElement experienceList={experienceJson.research} title="Research Experience"/>
-            const workElement = <ExperienceElement experienceList={experienceJson.work} title="Work Experience"/>
-            return [researchElement, workElement];
-        case ProfessionalContentElement.Skills:
-            const languagesSection = <SkillsElement skillList={skillsJson.languages}/>
-            const technologiesSection = <SkillsElement skillList={skillsJson.technologies}/>
-            const toolsSection = <SkillsElement skillList={skillsJson.devTools}/>
-            return [languagesSection, technologiesSection, toolsSection];
+        case ProfessionalContentElement.Work:
+            const workElement = <ExperienceElement experienceList={experienceJson.work}/>
+            return [workElement];
+        // case ProfessionalContentElement.Skills:
+        //     const languagesSection = <SkillsElement skillList={skillsJson.languages}/>
+        //     const technologiesSection = <SkillsElement skillList={skillsJson.technologies}/>
+        //     const toolsSection = <SkillsElement skillList={skillsJson.devTools}/>
+        //     return [languagesSection, technologiesSection, toolsSection];
         case ProfessionalContentElement.Projects:
             const projectData: ProfessionalProjectData[] = projectJson.filter((projectDataElem) => projectDataElem.public);
             return [<div className="projectsContainer">
@@ -49,7 +67,8 @@ function getTSXElementsToRender(jsonKey: ProfessionalContentElement): JSX.Elemen
                 })}
             </div>]
         case ProfessionalContentElement.Research:
-            return [<div></div>]
+            const researchElement = <ResearchElement experienceList={researchJson.research}/>
+            return [researchElement];
     }
 } 
 

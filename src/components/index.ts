@@ -6,4 +6,5 @@ import ExperienceElement from "./experienceElement";
 import EducationElement from "./educationElement";
 import SkillsElement from "./skillsElement";
 import AboutElement from "./aboutElement";
-export {ContentElement, Sidebar, Header, ProjectElement, ExperienceElement, EducationElement, SkillsElement, AboutElement};
+import ResearchElement from "./researchElement";
+export {ResearchElement, ContentElement, Sidebar, Header, ProjectElement, ExperienceElement, EducationElement, SkillsElement, AboutElement};

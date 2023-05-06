@@ -4,6 +4,7 @@
         "degree": "Bachelor of Computer Science (BCS)",
         "location": "Waterloo, ON",
         "dates": "Expected April 2024",
+        "imageUrl": "waterloo",
         "description": [
             "92% cumulative average, 5x Dean's Honours List",
             "Relevant Courses: Introduction to Computer Graphics, Numerical Computation, Human-Computer Interaction, Operating Systems, Algorithms, Software Design and Architechtures, Computer Networks, User Interfaces, SOftware Testing and Quality Assurance, Introduction to Database Management, Data Structures and Data Managemenet, Software Engineering Principles, Introduction to Combinatorics",
@@ -15,6 +16,7 @@
         "degree": "Ontario Secondary School Diploma (OSSD)",
         "location": "Ottawa, ON",
         "dates": "Sept 2015 - Apr 2019",
+        "imageUrl": "nepean",
         "description": [
             "Awards: Governor General's Academic Medal, Carman E. Pollock Memorial Mathematics Plaque"
         ]

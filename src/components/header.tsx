@@ -5,19 +5,19 @@ import '../styles/professional.css';
 import { HeaderProps, ContentElementProps, ProfessionalContentElement } from '../types';
 import projectJson from '../static/jsonData/projectData.json';
 import ProjectElement from './projectElement'
+import lebron from "../static/images/lebron.jpg";
 
 function Header(props: HeaderProps) {
     const tabs: any[] = Object.values(ProfessionalContentElement).filter((tab: any) => !Number.isInteger(tab as number));
 
     return (
         <div className="headerContainer">
-            <div>
+            <div className="flexRow">
+                <img onClick={()=>{props.changeThemeCallback()}} src={lebron} className="lebron flipped"/>
                 <div className="mainTitle">
                     Rayhan Moidu
                 </div>
-                {/* <div onClick={()=> {props.changeThemeCallback()}}>
-                    Change Theme
-                </div> */}
+                <img onClick={()=>{props.changeThemeCallback()}} src={lebron} className="lebron" />
             </div>
             <div className="tabContainer">
                 {tabs.map((tab: any) => {

@@ -5,11 +5,18 @@ import signiant from "./signiantmaster.png";
 import mentum from "./mentummaster.png"
 import formlabs from "./formlabs.jpeg";
 import canimmunize from "./canimmunize.jpeg";
-import waterloo from "./waterloo.jpg"
+import waterloo from "./uwaterloo.png"
+import raaxis from "./raaxis.png"
+import nepean from "./nepean.png"
+import rayhan from "./rayhan.png"
+import lebron from "./lebron.jpg"
+
 
 export const projectImages : {[key:string] : any} = {
     "meshGeneration": meshGeneration,
     "imageFilterDemo": imageFilter,
+    "raaxis": raaxis,
+    "rayhan": rayhan
 }
 
 export const experienceImages : {[key:string] : any} = {
@@ -18,5 +25,7 @@ export const experienceImages : {[key:string] : any} = {
     "mentum": mentum,
     "behaviour": behaviour,
     "formlabs": formlabs,
-    "waterloo": waterloo
+    "waterloo": waterloo,
+    "nepean": nepean,
+    "lebron": lebron
 }

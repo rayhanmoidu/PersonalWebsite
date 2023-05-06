@@ -7,7 +7,7 @@ import { ProfessionalSidebarProps, AboutElementProps } from '../types';
 function AboutElement(props: AboutElementProps) {
     props.descriptionElement.replace("University", '<b>' + "University" + "</b>");
     return (
-        <text className="aboutElementContainer">
+        <text className="aboutElement">
             {props.descriptionElement}
         </text>
 

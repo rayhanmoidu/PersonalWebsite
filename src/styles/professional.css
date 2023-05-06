@@ -8,6 +8,8 @@
     height: 100vh;
     width: 20vw;
     background-image: url("../static/images/gardenleft.jpeg");
+    filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
     background-size: cover;
 }
 
@@ -15,6 +17,8 @@
     height: 100vh;
     width: 20vw;
     background-image: url("../static/images/gardenright.jpeg");
+    filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
     background-size: cover;
 }
 
@@ -28,7 +32,7 @@
 .sidebarContainerRight.Inverted {
     height: 100vh;
     width: 20vw;
-    background-image: url("../static/images/gardenleft_invert.png");
+    background-image: url("../static/images/gardenright_invert.png");
     background-size: cover;
 }
 
@@ -56,7 +60,8 @@
 .tabContainer {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    max-width: 600px;
+    width: 65%;
     justify-content: space-between;
     margin-bottom: 30px;
 }
@@ -105,6 +110,7 @@ a:-webkit-any-link {
 
 .projectInfoContainer {
     margin: 15px;
+    width: 100%;
 }
 
 .projectTitle {
@@ -121,10 +127,44 @@ a:-webkit-any-link {
     margin-bottom: 15px;
 }
 
+.personalPhoto {
+    height: 200px;
+    border-radius: 200px;
+    margin-right: 30px;
+}
+
+.lebron {
+    height: 67px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.lebron.flipped {
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin-right: 20px;
+  margin-left: 0px;
+}
+
+.skillSection {
+    margin-bottom: 15px;
+    padding: 5px;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+}
+
 .experienceImage {
     max-width: 60px;
     max-height: 60px;
     border-radius: 60px;
+}
+
+.photoAndSkills {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-bottom: 30px;
+    width: 60%
 }
 
 .experienceElementContent {
@@ -142,8 +182,26 @@ a:-webkit-any-link {
     font-size: medium;
 }
 
+.bold {
+    font-weight: 700;
+}
+
+.researchHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
 .largeText.bold {
+    font-size: large;
     font-weight: 600;
+}
+
+.italics {
+    font-size: medium;
+    font-style: italic;
 }
 
 .normalText {
@@ -183,12 +241,17 @@ a:-webkit-any-link {
     text-decoration: underline;
 }
 
-.aboutElementContainer {
+.aboutElement {
     font-size: large;
     margin-bottom: 15px;
+}
+
+.aboutElementContainer {
     width: 75%;
     align-self: center;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
 }
 
 .projectDescriptionElement {

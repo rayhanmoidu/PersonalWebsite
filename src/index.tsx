@@ -25,16 +25,20 @@ const router = createBrowserRouter([
     element: <Professional tabToRender={ProfessionalContentElement.Projects}/>
   },
   {
-    path: "professional/experience",
-    element: <Professional tabToRender={ProfessionalContentElement.Experience}/>
+    path: "professional/work",
+    element: <Professional tabToRender={ProfessionalContentElement.Work}/>
   },
   {
     path: "professional/education",
     element: <Professional tabToRender={ProfessionalContentElement.Education}/>
   },
+  // {
+  //   path: "professional/skills",
+  //   element: <Professional tabToRender={ProfessionalContentElement.Skills}/>
+  // },
   {
-    path: "professional/skills",
-    element: <Professional tabToRender={ProfessionalContentElement.Skills}/>
+    path: "professional/research",
+    element: <Professional tabToRender={ProfessionalContentElement.Research}/>
   },
 ])
 
