@@ -31,7 +31,7 @@ function ProjectElement(props: ProjectElementProps) {
     )
     if (props.projectUrl != "") {
         return (
-            <a href={props.projectUrl} className="projectElementContainer anostyle">
+            <a target="_blank" href={props.projectUrl} className="projectElementContainer anostyle">
                 {returnElement}
             </a>
         )

@@ -35,7 +35,7 @@ function EducationElement(props: EducationElementProps) {
     </>
     if (props.href !="") {
         return (
-            <a href={props.href} className="projectElementContainer anostyle">
+            <a target="_blank" href={props.href} className="projectElementContainer anostyle">
                 {educationContent}
             </a>
         )

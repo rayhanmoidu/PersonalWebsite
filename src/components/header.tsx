@@ -17,7 +17,7 @@ function Header(props: HeaderProps) {
                 {
                     links.map((link: any) => {
                         return (
-                            <a href={link.hyperlink}>
+                            <a target="_blank" href={link.hyperlink}>
                                 <div className="iconContainer">
                                     <img className="iconImg" src={localImages[link.iconUrl]} />
                                 </div>

@@ -314,6 +314,7 @@ a:-webkit-any-link {
 .projectImage {
     height: 300px;
     object-fit: cover;
+    align-self: center;
 }
 
 .projectsContainer {

@@ -86,7 +86,7 @@ function ResearchElement(props: ResearchElementProps) {
                             </>
                             if (experienceElement.href !="") {
                                 return (
-                                    <a href={experienceElement.href} className="projectElementContainer anostyle">
+                                    <a target="_blank" href={experienceElement.href} className="projectElementContainer anostyle">
                                         {researchContent}
                                     </a>
                                 )

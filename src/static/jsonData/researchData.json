@@ -5,7 +5,7 @@
             "group": "Computational Motion Group",
             "location": "Waterloo, ON",
             "numTerms": 2,
-            "href": "https://cgl.uwaterloo.ca/",
+            "href": "https://cs.uwaterloo.ca/~c2batty/#research",
             "imgUrl": "waterloo",
             "description": "Working under the supervision of Prof. Christopher Batty, focusing on Computer Graphics and Scientific Computation.",
             "termInfo": [
@@ -13,6 +13,7 @@
                     "position": "Undergraduate Research Assistant",
                     "dates": "May 2023 - Present",
                     "description": [
+                        "Investigating simulation of mass-spring systems for cloth and hair animation applications in C++ and OpenGL"
                     ]
                 },
                 {

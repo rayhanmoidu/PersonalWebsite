@@ -11,9 +11,10 @@
                     "position": "Game Programmer Intern",
                     "dates": "Jan 2023 - April 2023",
                     "description": [
-                        "Architected core workflows using MVC pattern for C++/Qt desktop application with 500,000+ users",
-                        "Implemented topological optimization algorithms to generate organic support structures for 3D prints",
-                        "Streamlined remote print file generation in C++, minimizing application storage increases by 46%"
+                        "Created C# scripts for .NET CLI to execute customizable multiplayer autotests in parallel, analyze output logs to compute results, and queue tasks onto live CI/CD tools",
+                        "Enhanced REST API and Entity framework backend to support multiplayer test results in SQL DB",
+                        "Designed and built custom web UI in Typescript and Lit to visualize autotest results. Offers automated navigation for TV display, and manual option for local use",
+                        "Implemented mechanism to export GPU texture data as PNG in C++, facilitating periodic screenshots during autotests."
                     ]
                 }
             ]
