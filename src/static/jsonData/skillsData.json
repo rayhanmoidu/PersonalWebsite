@@ -1,5 +1,5 @@
 {
     "languages": "C++, C#, Python, Typescript, Javascript, Java, Go, SQL, HTML, CSS",
-    "technologies": "Node.js, React, Redux, AWS, OpenGL, Docker, Unity, PostgreSQL, MongoDB, Jest, Unity, OpenCV",
+    "technologies": "Node.js, React, Redux, AWS, OpenGL, Docker, PostgreSQL, MongoDB, Jest, Unity, OpenCV",
     "devTools": "Git, Qt, Visual Studio, VSCode, Postman, Perforce"
 }

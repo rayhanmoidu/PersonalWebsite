@@ -64,7 +64,7 @@
 .tabContainer {
     display: flex;
     flex-direction: row;
-    max-width: 600px;
+    max-width: 500px;
     width: 65%;
     justify-content: space-between;
     margin-bottom: 50px;
@@ -311,10 +311,19 @@ a:-webkit-any-link {
     flex-direction: row;
 }
 
+.projectImageContainer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:inherit;
+}
+
 .projectImage {
     height: 300px;
     object-fit: cover;
     align-self: center;
+    display: block;
 }
 
 .projectsContainer {

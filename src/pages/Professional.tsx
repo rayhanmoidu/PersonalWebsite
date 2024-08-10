@@ -4,17 +4,24 @@ import { Link } from "react-router-dom";
 import {ContentElement, Sidebar, Header} from '../components/index'
 import { ProfessionalLandingPageProps, ProfessionalContentElement } from '../types';
 import nophones from "../static/images/nophones.png";
+import {Lala} from '../components/p5sketch';
+
+import miroirs from "../components/miroirs.mp3"
+
 
 function Professional(props: ProfessionalLandingPageProps) {
 
   const [isThemeStateInverted, setIsThemeStateInverted] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false)
 
   const [width, setWidth] = useState<number>(window.innerWidth);
 
   function handleWindowSizeChange() {
       setWidth(window.innerWidth);
   }
+
   useEffect(() => {
+      // new Audio(miroirs).play()
       window.addEventListener('resize', handleWindowSizeChange);
       return () => {
           window.removeEventListener('resize', handleWindowSizeChange);
@@ -29,20 +36,22 @@ function Professional(props: ProfessionalLandingPageProps) {
   //     setIsThemeStateInverted(value => !value)
   //   })
   // }, []);
-  if (isMobile) {
-    return (<div className="nophones"></div>)
-  } else {
+  // if (isMobile) {
+  //   return (<div className="nophones"></div>)
+  // } else {
     return (
       <div className="mainframe">
-        <Sidebar pos="left" shouldInvertTheme={isThemeStateInverted}/>
+        <Lala />
+        {/* <button onClick={()=>{new Audio(miroirs).play()}}></button> */}
+        {/* <Sidebar pos="left" shouldInvertTheme={isThemeStateInverted}/>
         <div className="professionalContent">
           <Header selectedTab={props.tabToRender} changeThemeCallback={()=>{setIsThemeStateInverted(!isThemeStateInverted)}}/>
           <ContentElement jsonKey={props.tabToRender}/>
         </div>
-        <Sidebar pos="right" shouldInvertTheme={isThemeStateInverted}/>
+        <Sidebar pos="right" shouldInvertTheme={isThemeStateInverted}/> */}
       </div>
     );
-  }
+  // }
 }
 
 function startFlickerTimeout(changeThemeCallback: any) {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { CSSProperties, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { Link } from 'react-router-dom';
 import '../styles/professional.css';
@@ -11,13 +11,15 @@ function ExperienceElement(props: ExperienceElementProps) {
         <div className="experienceSectionContainer">
             <div className="experienceSectionElementContainer">
                 {
-                    props.experienceList.map((experienceElement: ExperienceElementData) => {
+                    props.experienceList.map((experienceElement: ExperienceElementData, index:number) => {
                         let termInfo: ExperienceTermData;
                         if (experienceElement.numTerms == 1) {
                             termInfo = experienceElement.termInfo[0];
                             const experienceContent = (
                                 <>
-                                    <img className="projectImage" src={localImages[experienceElement.imgUrl]}/>
+                                    <div className='projectImageContainer'>
+                                        <img className="projectImage" src={localImages[experienceElement.imgUrl]}/>
+                                    </div>
                                     <div className="projectInfoContainer">
                                         <div className="experienceElementHeader">
                                             <div className="expElemTextPair">

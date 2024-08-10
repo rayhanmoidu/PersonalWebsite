@@ -16,6 +16,10 @@ import github from "./github.png"
 import linkedin from "./linkedin.png"
 import email from "./email.svg"
 import changetheme from "./changetheme.png"
+import chaos from "./chaos.mp4"
+import cloth from "./cloth.gif"
+import sidefx from "./sidefx.png"
+import colourtheory from "./colourtheory.png"
 
 export const localImages : {[key:string] : any} = {
     "meshGeneration": meshGeneration,
@@ -28,6 +32,7 @@ export const localImages : {[key:string] : any} = {
     "canimmunize": canimmunize,
     "mentum": mentum,
     "behaviour": behaviour,
+    "sidefx": sidefx,
     "formlabs": formlabs,
     "waterloo": waterloo,
     "nepean": nepean,
@@ -35,5 +40,8 @@ export const localImages : {[key:string] : any} = {
     "email": email,
     "github": github,
     "linkedin": linkedin,
-    "changetheme": changetheme
+    "changetheme": changetheme,
+    "chaos": chaos,
+    "cloth": cloth,
+    "colourtheory": colourtheory,
 }

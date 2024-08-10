@@ -20,8 +20,9 @@
                     "position": "Undergraduate Research Assistant",
                     "dates": "Sept 2022 - Dec 2022",
                     "description": [
-                        "Developed isosurface stuffing algorithms in C++ to generate triangle meshes with ideal angle distributions",
-                        "Engineered multi-component system to encapsulate iterable algorithm steps and visualize them in OpenGL"
+                        "Developed isosurface stuffing algorithms in C++ to generate 2D triangle meshes with desired angle distributions",
+                        "Published results as open source library. Offers various tiling arrangement options, and ability to specify triangle side lengths throughout regions of input signed distance function",
+                        "Engineered multi-component system to encapsulate algorithm steps and visualize them in OpenGL"
                     ]
                 }
             ]

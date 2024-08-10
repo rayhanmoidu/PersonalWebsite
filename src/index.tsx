@@ -26,17 +26,17 @@ const router = createBrowserRouter([
     element: <Professional tabToRender={ProfessionalContentElement.Projects}/>
   },
   {
-    path: "/work",
-    element: <Professional tabToRender={ProfessionalContentElement.Work}/>
+    path: "/experience",
+    element: <Professional tabToRender={ProfessionalContentElement.Experience}/>
   },
   {
     path: "/education",
     element: <Professional tabToRender={ProfessionalContentElement.Education}/>
   },
-  {
-    path: "/research",
-    element: <Professional tabToRender={ProfessionalContentElement.Research}/>
-  },
+  // {
+  //   path: "/Games/*",
+  //   element: <Games tabToRender={ProfessionalContentElement.Education}/>
+  // },
 ])
 
 const root = ReactDOM.createRoot(

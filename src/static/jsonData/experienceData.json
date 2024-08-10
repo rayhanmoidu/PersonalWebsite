@@ -1,6 +1,42 @@
 {
     "work": [
         {
+            "organization": "SideFX Software",
+            "location": "Toronto, ON",
+            "numTerms": 1,
+            "imgUrl": "sidefx",
+            "href": "https://www.sidefx.com/",
+            "termInfo": [
+                {
+                    "position": "3D Software Developer (R&D Co-op)",
+                    "dates": "Sept 2023 - Present",
+                    "description": [
+                        "Geometry-based algorithmic design and implementation of 3D modelling tools for Houdini, a graphics software application"
+                    ]
+                }
+            ],
+            "backgroundColor": "000000"
+        },
+        {
+            "organization": "Computational Motion Group",
+            "location": "Waterloo, ON",
+            "numTerms": 1,
+            "imgUrl": "waterloo",
+            "href": "https://cs.uwaterloo.ca/~c2batty/#research",
+            "termInfo": [
+                {
+                    "position": "Undergraduate Research Assistant",
+                    "dates": "Sept 2022 - Present",
+                    "description": [
+                        "Developed isosurface stuffing algorithms in C++ to generate 2D triangle meshes with desired angle distributions",
+                        "Published results as open source library. Offers various tiling arrangement options, and ability to specify triangle side lengths throughout regions of input signed distance function",
+                        "Engineered multi-component system to encapsulate algorithm steps and visualize them in OpenGL"
+                    ]
+                }
+            ],
+            "backgroundColor": "000000"
+        },
+        {
             "organization": "Behaviour Interactive",
             "location": "Montreal, QC",
             "numTerms": 1,
@@ -17,7 +53,8 @@
                         "Implemented mechanism to export GPU texture data as PNG in C++, facilitating periodic screenshots during autotests."
                     ]
                 }
-            ]
+            ],
+            "backgroundColor": "000000"
         },
         {
             "organization": "Formlabs",
@@ -35,7 +72,8 @@
                         "Streamlined remote print file generation in C++, minimizing application storage increases by 46%"
                     ]
                 }
-            ]
+            ],
+            "backgroundColor": "000000"
         },
         {
             "organization": "Signiant",
@@ -53,7 +91,8 @@
                         "Delivered enhancements to a React/Redux application, impacting 100,000+ users"
                     ]
                 }
-            ]
+            ],
+            "backgroundColor": "000000"
         },
         {
             "organization": "Mentum Group",
@@ -70,7 +109,8 @@
                         "Developed end-to-end integration tests for business critical Javascript software using Cypress"
                     ]
                 }
-            ]
+            ],
+            "backgroundColor": "000000"
         },
         {
             "organization": "CANImmunize",
@@ -87,7 +127,8 @@
                         "Utilized AWS SAM to automatedly email pdfs generated based on dynamic data"
                     ]
                 }
-            ]
+            ],
+            "backgroundColor": "000000"
         }
     ]
 }

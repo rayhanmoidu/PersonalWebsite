@@ -1,8 +1,32 @@
 [
     {
+        "title": "Cloth Simulation Playground",
+        "description": [
+            "Built a real-time interactive 3D cloth animation in C++ and OpenGL using mass-spring system dynamics",
+            "Incorporated multiple solving methods, self and object collision detection, loop subdivision of constructed mesh, maximum stretch and compression constraints, and various UI features such as configurable environment physics and manual pinning of cloth",
+            "Employed local renderer built using Eigen library, with ability to raytrace and rasterize"
+        ],
+        "projectUrl": "https://github.com/rayhanmoidu/ClothSimulation",
+        "imageUrl": "cloth",
+        "public": true
+    },
+    {
+        "title": "Colour Theory Tester",
+        "description": [
+            "Created an interactive digital painting game in ProcessingJS to test colour theory.",
+            "Users blend amounts of red, blue and yellow pigment to achieve a destination colour.",
+            "Features practical pigment mixing (Sochorova, 2021)"
+        ],
+        "projectUrl": "https://github.com/rayhanmoidu/colourtheory",
+        "imageUrl": "colourtheory",
+        "public": true
+    },
+    {
         "title": "2D Triangle Mesh Generation Library",
         "description": [
-            "Created a lightweight library that generates 2D triangle meshes for user defined isosurfaces in C++. Includes various options for triangle tiling arrangements, including an all-acute adaptation. Provides option for manual specification of desired triangle side lengths in custom regions of isosurface."
+            "Created a lightweight library that generates 2D triangle meshes for user defined isosurfaces in C++",
+            "Includes various options for triangle tiling arrangements, including an all-acute adaptation",
+            "Provides option for manual specification of desired triangle side lengths in custom regions of isosurface"
         ],
         "projectUrl": "https://github.com/rayhanmoidu/MeshGeneration",
         "imageUrl": "meshGeneration",
@@ -27,22 +51,24 @@
         "public": false
     },
     {
+        "title": "Chaotic Visualizations",
+        "description": [
+            "Created animated visualizations of strange attractors using C++ and OpenGL",
+            "Employed Euler’s method to numerically solve differential system, projected resulting 3D point set onto 2D plane based on continuously rotating camera position"
+        ],
+        "projectUrl": "",
+        "imageUrl": "chaos",
+        "public": true
+    },
+    {
         "title": "Image Filters",
         "description": [
-            "Used OpenCV to create various photo filters in C++. Employed quadtree to organize image attributes spatially, and applied geometric tiling techniques to produce desired aesthetic results."
+            "Used OpenCV to create various photo filters in C++",
+            "Employed quadtree to organize image attributes spatially, and applied geometric tiling techniques to produce desired aesthetic results"
         ],
         "projectUrl": "https://github.com/rayhanmoidu/imageProcessing",
         "imageUrl": "imageFilterDemo",
         "public": true
-    },
-    {
-        "title": "Chaotic Visualizations",
-        "description": [
-            ""
-        ],
-        "projectUrl": "",
-        "imageUrl": "",
-        "public": false
     },
     {
         "title": "WLP4 Compiler",
@@ -65,7 +91,8 @@
     {
         "title": "RAAXIS",
         "description": [
-            "Designed and built a 2-player adaptation of Tetris. Programmed game and embedded logic in C++, optimizing memory usage to remain within the constraints of the Arduino Uno. Coordinated hardware to facilitate tactile gameplay."
+            "Designed and built a 2-player adaptation of Tetris. Programmed game and embedded logic in C++, optimizing memory usage to remain within the constraints of the Arduino Uno",
+            "Coordinated hardware to facilitate tactile gameplay"
         ],
         "projectUrl": "https://github.com/rayhanmoidu/RAXXIS",
         "imageUrl": "raaxis",

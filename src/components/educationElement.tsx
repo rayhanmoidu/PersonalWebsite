@@ -7,7 +7,9 @@ import {localImages} from '../static/images/images'
 
 function EducationElement(props: EducationElementProps) {
     const educationContent = <> 
-        <img className="projectImage" src={localImages[props.imageUrl]}/>
+            <div className="projectImageContainer">
+                <img className="projectImage" src={localImages[props.imageUrl]}/>
+            </div>
             <div className="projectInfoContainer">
                 {/* <div className="projectTitle">{props.institution}</div> */}
                 <div className="experienceElementHeader">

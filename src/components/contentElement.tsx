@@ -22,7 +22,6 @@ function ContentElement(props: ContentElementProps) {
 }
 
 function getTSXElementsToRender(jsonKey: ProfessionalContentElement): JSX.Element[] {
-    console.log(projectJson)
     switch (jsonKey) {
         case ProfessionalContentElement.About:
             const languagesSection = <SkillsElement skillSection='Languages' skillList={skillsJson.languages}/>
@@ -53,7 +52,7 @@ function getTSXElementsToRender(jsonKey: ProfessionalContentElement): JSX.Elemen
                     return <EducationElement href={educationDataElem.href} imageUrl={educationDataElem.imageUrl} institution={educationDataElem.institution} degree={educationDataElem.degree} location={educationDataElem.location} dates={educationDataElem.dates} description={educationDataElem.description}/>
                 })}
             </div>]
-        case ProfessionalContentElement.Work:
+        case ProfessionalContentElement.Experience:
             const workElement = <ExperienceElement experienceList={experienceJson.work}/>
             return [workElement];
         // case ProfessionalContentElement.Skills:
@@ -68,9 +67,9 @@ function getTSXElementsToRender(jsonKey: ProfessionalContentElement): JSX.Elemen
                     return <ProjectElement title={projectDataElem.title} description={projectDataElem.description} projectUrl={projectDataElem.projectUrl} imageUrl={projectDataElem.imageUrl}/>
                 })}
             </div>]
-        case ProfessionalContentElement.Research:
-            const researchElement = <ResearchElement experienceList={researchJson.research}/>
-            return [researchElement];
+        // case ProfessionalContentElement.Research:
+        //     const researchElement = <ResearchElement experienceList={researchJson.research}/>
+        //     return [researchElement];
     }
 } 
 

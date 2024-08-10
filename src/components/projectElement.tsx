@@ -8,11 +8,17 @@ import { pathToFileURL } from 'url';
 import {localImages} from '../static/images/images'
 
 function ProjectElement(props: ProjectElementProps) {
-    console.log(props.imageUrl)
+    
+    const isVideo = props.imageUrl == "chaos";
 
     const returnElement = (
         <>
-            <img className="projectImage" src={localImages[props.imageUrl]}/>
+            {isVideo ?
+                <video autoPlay={true} muted loop className="projectImage" src={localImages[props.imageUrl]}>
+                    <source  src={localImages[props.imageUrl]} type='video/mp4'/>
+                </video> :
+                <img className="projectImage" src={localImages[props.imageUrl]}/>
+            }
             <div className="projectInfoContainer">
                 <div className="projectTitle">{props.title}</div>
                 <div>

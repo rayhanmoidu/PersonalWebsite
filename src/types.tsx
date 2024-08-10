@@ -15,8 +15,7 @@ export interface HeaderProps {
 export enum ProfessionalContentElement {
     About = 1,
     Projects,
-    Work,
-    Research,
+    Experience,
     Education,
 }
 
@@ -72,6 +71,7 @@ export interface ExperienceElementData {
     imgUrl: string;
     href: string;
     termInfo: ExperienceTermData[];
+    backgroundColor: string;
 }
 
 export interface ExperienceTermData {
